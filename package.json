@@ -1,0 +1,26 @@
+{
+  "name": "phonemail-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PhoneMail full-stack monorepo featuring Node.js Express backend with embedded SMTP receiver and React Vite Tailwind frontend with mobile/desktop dual view.",
+  "scripts": {
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "keywords": [
+    "phonemail",
+    "smtp-server",
+    "mailparser",
+    "express",
+    "react",
+    "vite",
+    "tailwind"
+  ]
+}

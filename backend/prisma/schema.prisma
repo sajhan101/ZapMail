@@ -1,0 +1,41 @@
+// Prisma schema for PhoneMail
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id             String   @id @default(uuid())
+  name           String   @default("PhoneMail User")
+  phoneNumber    String   @unique
+  email          String   @unique
+  passwordHash   String
+  avatarUrl      String?
+  language       String   @default("English")
+  registeredVia  String   @default("WEB") // 'MOBILE_APP', 'WEB', 'PHONE_CALL'
+  createdAt      DateTime @default(now())
+}
+
+model Email {
+  id             String   @id @default(uuid())
+  senderEmail    String
+  recipientEmail String
+  subject        String?
+  body           String?
+  read           Boolean  @default(false)
+  createdAt      DateTime @default(now())
+}
+
+model SmsLog {
+  id             String   @id @default(uuid())
+  recipientPhone String
+  senderEmail    String?
+  subject        String?
+  message        String
+  timestamp      DateTime @default(now())
+}
