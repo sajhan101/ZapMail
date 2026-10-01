@@ -1,7 +1,8 @@
 # ⚡ ZapMail — High-Performance Telecom SMS & Email Gateway
 
 > **Bridging the Cellular Divide**: A unified messaging platform connecting cellular SMS carrier networks and traditional email protocols with bi-directional conversation threading, real-time SMS dispatch via TextBee, an embedded SMTP engine, and an intuitive mobile/desktop webmail interface.
-
+## 📺 Project Demo Video
+👉 [Watch ZapMail Demo Walkthrough on Google Drive](https://drive.google.com/file/d/1sr6U4Z_k5w607u5ikTIXVN4ca4cdz5sn/view?usp=sharing)
 ---
 
 ## 📋 Table of Contents
